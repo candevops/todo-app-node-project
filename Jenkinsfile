@@ -1,7 +1,7 @@
   pipeline {
     agent { label "master" }
     environment {
-        ECR_REGISTRY = "871577511569.ecr.us-east-1.amazonaws.com"
+        ECR_REGISTRY = "871577511569.dkr.ecr.us-east-1.amazonaws.com"
         APP_REPO_NAME= "candevops-repo/todo-app"
     }
     stages {
@@ -33,3 +33,4 @@
         }
     }
 }
+
